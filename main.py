@@ -3,6 +3,7 @@ import logging
 import cofounder
 import calculator
 import translator_app
+import dice_throw_streamlit
 
 #logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
 logging.basicConfig(encoding='utf-8', level=logging.INFO)
@@ -10,7 +11,8 @@ logging.basicConfig(encoding='utf-8', level=logging.INFO)
 PAGES = {
     "Cofounder": cofounder,
     "Calculator": calculator,
-    "Translator": translator_app
+    "Translator": translator_app,
+    "Dice Throw Streamlit": dice_throw_streamlit
 }
 
 def main():

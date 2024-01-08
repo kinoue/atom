@@ -6,7 +6,8 @@ from agent import ask_agent
 def app():
     if 'messages' not in st.session_state:
         st.session_state['messages'] = [
-            AIMessage(content="Hi! I'm SG-1! How can I help you?")
+            AIMessage(content="Hi! My name is VARP Cofounder. I can develop and deploy "
+                      "streamlit apps based on your ideas. Let me know your ideas.")
         ]
 
     dialogue_area = st.empty()
