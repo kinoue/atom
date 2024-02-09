@@ -2,7 +2,7 @@ from os.path import dirname
 
 from langchain.agents import AgentExecutor, create_openai_tools_agent
 from langchain.prompts import SystemMessagePromptTemplate, PromptTemplate
-from langchain.tools import ShellTool
+from langchain_community.tools import ShellTool
 from langchain_community.agent_toolkits import FileManagementToolkit
 from langchain import hub
 from llms import llms

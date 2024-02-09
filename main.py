@@ -1,6 +1,6 @@
 import streamlit as st
 import logging
-import cofounder
+import atom
 import calculator
 import translator_app
 
@@ -8,7 +8,7 @@ import translator_app
 logging.basicConfig(encoding='utf-8', level=logging.INFO)
 
 PAGES = {
-    "Cofounder": cofounder,
+    "Atom": atom,
     "Calculator": calculator,
     "Translator": translator_app
 }

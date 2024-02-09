@@ -6,7 +6,7 @@ from agent import ask_agent
 def app():
     if 'messages' not in st.session_state:
         st.session_state['messages'] = [
-            AIMessage(content="Hi! I'm SG-1! How can I help you?")
+            AIMessage(content="Hi! I'm Atom! How can I help you?")
         ]
 
     dialogue_area = st.empty()

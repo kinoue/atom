@@ -1,11 +1,11 @@
 import os
-from langchain.chat_models import AzureChatOpenAI
-from langchain.chat_models import ChatOpenAI
+from typing import Mapping, Any
+from langchain_openai.chat_models import AzureChatOpenAI
+from langchain_openai.chat_models import ChatOpenAI
 from langchain.globals import set_llm_cache
 from langchain.cache import SQLiteCache
-from langchain.llms import Bedrock
-from typing import Mapping, Any
-from langchain.llms.bedrock import BedrockBase
+from langchain_community.llms.bedrock import Bedrock
+from langchain_community.llms.bedrock import BedrockBase
 
 set_llm_cache(SQLiteCache(database_path="cache/langchain.db"))
 
@@ -100,8 +100,7 @@ llama2 = {
             'max_gen_len': 1500,
             'temperature': 0.1,
             'top_p': 0.9,
-        },
-        cache=False
+        }
     ),
     'metadata': {
         'model_type': 'Llama 2 70B',
@@ -118,8 +117,7 @@ claude2 = {
             "max_tokens_to_sample": 500,
             "temperature": 0.1,
             "top_p": 0.9,
-        },
-        cache=False
+        }
     ),
     'metadata': {
         'model_type': 'Claude 2',
@@ -136,8 +134,7 @@ cohere = {
             "max_tokens": 100,
             "temperature": 0.8,
             "return_likelihood": "GENERATION"
-        },
-        cache=False
+        }
     ),
     'metadata': {
         'model_type': 'Cohere Command V14.7',
