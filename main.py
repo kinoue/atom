@@ -3,6 +3,7 @@ import logging
 import atom
 import calculator
 import translator_app
+import bmi_calculator
 
 #logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
 logging.basicConfig(encoding='utf-8', level=logging.INFO)
@@ -10,7 +11,8 @@ logging.basicConfig(encoding='utf-8', level=logging.INFO)
 PAGES = {
     "Atom": atom,
     "Calculator": calculator,
-    "Translator": translator_app
+    "Translator": translator_app,
+    "BMI Calculator": bmi_calculator
 }
 
 def main():
